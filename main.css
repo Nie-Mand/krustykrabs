@@ -185,25 +185,20 @@ html {
   display: block;
   margin: auto;
   margin-bottom: 10px;
-  width: 350px;
+  width: 450px;
   border: none;
-  padding: 20px;
-  color: #fff;
+  padding: 15px;
   font-family: "sofia";
-  background: none;
-  font-size: 17px;
-  border-bottom: 2px solid #fff;
+  font-size: 15px;
+  box-shadow: 0px 0px 10px 0px #fff;
 }
 .contact-container textarea {
-  width: 350px;
+  width: 450px;
   height: 150px;
-  color: #fff;
-  background: none;
   border: none;
-  border-left: 2px solid #fff;
-  padding: 20px;
-  margin-top: 30px;
-  font-size: 17px;
+  padding: 15px;
+  font-size: 15px;
+  box-shadow: 0px 0px 10px 0px #fff;
 }
 ::placeholder {
   color: rgb(177, 3, 3);
@@ -314,7 +309,7 @@ footer {
   margin-top: 30px;
   width: 150px;
   color: #fff;
-  background: #c34a4a;
+  background: rgb(177, 3, 3);
   border: none;
   border-radius: 3px;
   height: 40px;
@@ -356,6 +351,11 @@ footer {
 #lll {
   width: 100px;
 }
+
+.pppp {
+  display: none;
+}
+
 .nv {
   width: 50px;
   height: 50px;
@@ -382,6 +382,79 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #8bc34a;
+}
+#pppp {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: none;
+  position: fixed;
+}
+.ordercard {
+  width: 650px;
+  height: auto;
+  box-shadow: 0px 0px 50px 0px #000;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.918);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px;
+  text-align: center;
+  border-radius: 50px;
+}
+#tone {
+  color: rgb(177, 3, 3);
+  font-weight: 1000;
+  font-family: "sofia";
+  display: block;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.ord {
+  width: 250px;
+  height: 50px;
+  color: #fff;
+  font-family: "sofia";
+  background: rgb(177, 3, 3);
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 17px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px #fff;
+}
+#totalprice {
+  color: rgb(177, 3, 3);
+  font-family: "sofia";
+  font-size: 25px;
+  display: block;
+}
+#qqq,
+#qu {
+  color: #fff;
+  display: inline;
+  font-family: "sofia";
+  margin: 10px;
+  font-size: 20px;
+}
+.nx,
+.prv {
+  color: #fff;
+  background: rgb(177, 3, 3);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  margin: auto !important;
+  box-shadow: 0px 0px 10px 0px #fff;
+}
+.ordercard img {
+  height: 200px;
+  display: block;
+  margin: auto !important ;
 }
 
 @media (max-width: 1289px) {
@@ -597,5 +670,18 @@ footer {
   .foodcard button {
     width: 70px;
     font-size: 8px;
+  }
+}
+@media (max-width: 808px) {
+  .ordercard {
+    width: 80% !important;
+  }
+}
+@media (max-width: 376px) {
+  .ordercard img {
+    height: 140px;
+  }
+  .ord {
+    width: 120px;
   }
 }
