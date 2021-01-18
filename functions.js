@@ -54,7 +54,6 @@ window.addEventListener('contextmenu', function (e) {
     if(typeof (global) === "undefined") {
         throw new Error("window is undefined");
     }
-
     var _hash = "!";
     var noBackPlease = function () {
         global.location.href += "#";
